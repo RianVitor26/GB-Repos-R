@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react';
 import Global from './globalStyle'
 import * as C from './style'
 
+
 interface Repo {
   name: string;
   description: string;
@@ -25,9 +26,9 @@ function App() {
       <ul>
         {repos.map(repo => {
           return (
-              <li key={repo.name}>
-                  {repo.name}
-              </li>
+            <li key={repo.name}>
+              {repo.name}
+           </li>
             )
           })}
       </ul>
