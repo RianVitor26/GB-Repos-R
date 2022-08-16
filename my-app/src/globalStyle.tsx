@@ -9,6 +9,7 @@ const Global = createGlobalStyle`
     --repo-text: #c0c0c0;
     --input-background: #c0c0c0;
     --input-text: #181818;
+    --footer-background: #161616; 
 }
 
 *{
