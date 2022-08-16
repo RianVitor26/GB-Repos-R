@@ -1,7 +1,7 @@
 # Procurar repositório
 
 ## Descrição do Projeto 📌
->Esse projeto é um sistema de procura por repositórios, nesse caso, os meus repositórios. Ele utiliza a api do github para trazer as informações dos repositórios de acordo com o usuário inserido na requisição. A cada palavra digitada na área de pesquisa, os sistema filtra de acordo com o valor inserido e os nomes dos repositórios.
+>Esse projeto é um sistema de procura por repositórios, nesse caso, os meus repositórios. Ele utiliza a api do github para trazer as informações dos repositórios de acordo com o usuário inserido na requisição. A cada palavra digitada na área de pesquisa, o sistema filtra de acordo com o valor inserido e os nomes dos repositórios.
 >
 <br>
 
