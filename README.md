@@ -40,4 +40,4 @@
 3. npm run dev
 <br>
 <br>
-**Developed with ❤️ by** - [RianVitor26](https://github.com/RianVitor26)😊
+Developed with ❤️ by RianVitor26 😊
