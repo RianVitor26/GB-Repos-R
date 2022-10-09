@@ -3,13 +3,14 @@ import { createGlobalStyle } from 'styled-components'
 const Global = createGlobalStyle`
 
 :root{
-    --global-background: #050505;
-    --repo-background: #161616;
-    --repo-background-hover: #1d1d1d;
-    --repo-text: #c0c0c0;
-    --input-background: #c0c0c0;
-    --input-text: #181818;
-    --footer-background: #161616; 
+    --global-background: #122620;
+    --repo-background: #B68D40; 
+    --repo-background-hover: #D6AD60;
+    --repo-text: #F4EBD0;
+    --input-background: #F4EBD0;
+    --input-text: #122620;
+    --footer-background: #122620; 
+    --perfil-background: #0c1d18;
 }
 
 *{
@@ -22,6 +23,6 @@ body{
     font-family: Sans-Serif;
     background-color: var(--global-background);
 }
-`
+`;
 
 export default Global
