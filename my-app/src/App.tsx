@@ -5,6 +5,8 @@ import * as C from "./style";
 interface Repo {
   name: string;
   description: string;
+  created_at: string;
+  clone_url: string;
 }
 
 function App() {
@@ -22,15 +24,16 @@ function App() {
     setFilteredRepos(repos.filter((repo) => repo.name.includes(search)));
   }, [search]);
 
+  console.log(repos);
+
   return (
     <C.Wrapper>
       <C.PerfilContainer>
         <C.Avatar />
-        <div>
-          
-        </div>
+        <h1>Rian Vitor</h1>
+        <h2>Desenvolvedor web.</h2>
       </C.PerfilContainer>
-      
+
       <C.ReposContainer>
         <C.InputContainer>
           <input
@@ -46,8 +49,13 @@ function App() {
             {filteredRepos.map((repo) => {
               return (
                 <li key={repo.name}>
-                  {repo.name}
+                  <b>{repo.name}</b>
+                  <span>: </span>
                   {repo.description}
+                  <p>Criado em: {repo.created_at.substring(0, 10)}</p>
+                  <a target="blank" href={repo.clone_url}>
+                    Source code
+                  </a>
                 </li>
               );
             })}
@@ -60,7 +68,11 @@ function App() {
                   <b>{repo.name}</b>
                   <span>: </span>
                   {repo.description}
-                  <br />
+
+                  <p>Criado em: {repo.created_at.substring(0, 10)}</p>
+                  <a target="blank" href={repo.clone_url}>
+                    Source code
+                  </a>
                 </li>
               );
             })}

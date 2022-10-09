@@ -22,9 +22,14 @@ export const PerfilContainer = styled.div`
   background-color: var(--perfil-background);
   padding: 0 2em;
   word-wrap: break-word;
-  min-width: 500px;
   color: var(--repo-text);
   text-align: center;
+
+  h1, h2{
+    color: var(--repo-text);
+    font-size: clamp(14px, 1.2em, 100px);
+    padding-top: 1em;
+  }
 
   @media only screen and (max-width: 768px) {
     width: 100%;
@@ -45,20 +50,19 @@ export const Avatar = styled.div`
 
 
 export const ReposContainer = styled.div`
-width: 100%;
-overflow-y: auto;
-min-width: 300px;
-display: flex;
-flex-direction: column;
+  width: 100%;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
 
-ul{
-width: 100%;
-display: flex;
-align-items: center;
-flex-direction: column;
-}
+  ul {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
 
-li{
+  li {
     overflow: auto;
     color: var(--repo-text);
     margin-top: 4vh;
@@ -72,12 +76,24 @@ li{
     transition: all ease 500ms;
     font-size: clamp(12px, 1.3vw, 30px);
 
-    :hover{
-        transform: translateY(-10px);
-        background-color: var(--repo-background-hover);
+    b {
+      color: var(--repo-text);
     }
-}
-`
+
+    a {
+      color: var(--global-background);
+
+      :hover {
+        color: white;
+      }
+    }
+
+    :hover {
+      transform: translateY(-10px);
+      background-color: var(--repo-background-hover);
+    }
+  }
+`;
 
 export const InputContainer = styled.div`
     width: 100%;
