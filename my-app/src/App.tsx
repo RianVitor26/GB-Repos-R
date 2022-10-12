@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import Global from "./globalStyle";
 import * as C from "./style";
+import { Perfil } from "./components/Perfil";
 
 interface Repo {
   name: string;
@@ -28,11 +29,7 @@ function App() {
 
   return (
     <C.Wrapper>
-      <C.PerfilContainer>
-        <C.Avatar />
-        <h1>Rian Vitor</h1>
-        <h2>Desenvolvedor web.</h2>
-      </C.PerfilContainer>
+      <Perfil />
 
       <C.ReposContainer>
         <C.InputContainer>

@@ -12,42 +12,6 @@ export const Wrapper = styled.div`
   }
 `;
 
-export const PerfilContainer = styled.div`
-  width: 50%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  height: 100%;
-  background-color: var(--perfil-background);
-  padding: 0 2em;
-  word-wrap: break-word;
-  color: var(--repo-text);
-  text-align: center;
-
-  h1, h2{
-    color: var(--repo-text);
-    font-size: clamp(14px, 1.2em, 100px);
-    padding-top: 1em;
-  }
-
-  @media only screen and (max-width: 768px) {
-    width: 100%;
-  }
-`;
-
-export const Avatar = styled.div`
-  width: 10em;
-  height: 10em;
-  border-radius: 50%;
-  border: 2px solid white;
-  background-image: url("avatar.png");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-`;
-
-
 
 export const ReposContainer = styled.div`
   width: 100%;
@@ -63,7 +27,6 @@ export const ReposContainer = styled.div`
   }
 
   li {
-    overflow: auto;
     color: var(--repo-text);
     margin-top: 4vh;
     width: 80%;
@@ -77,15 +40,11 @@ export const ReposContainer = styled.div`
     font-size: clamp(12px, 1.3vw, 30px);
 
     b {
-      color: var(--repo-text);
+      color: var(--global-background);
     }
 
     a {
       color: var(--global-background);
-
-      :hover {
-        color: white;
-      }
     }
 
     :hover {
