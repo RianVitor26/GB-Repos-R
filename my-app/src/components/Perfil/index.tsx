@@ -18,7 +18,7 @@ export const Perfil = () => {
       .then((response) => response.json())
       .then((data) => setPerfil(data));
   }, []);
-  console.log(perfil);
+  console.log({perfil});
 
   return (
     <>
