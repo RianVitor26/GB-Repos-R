@@ -25,7 +25,7 @@ export const PerfilContainer = styled.div`
   }
 
   h1{
-    border-bottom: 1px solid var(--alert);
+    border-bottom: 1px solid var(--alert );
   }
 
   h2 {
@@ -43,7 +43,7 @@ export const PerfilContainer = styled.div`
   }
 
   a {
-    color: var(--text-color);
+    color: var(--alert);
     :hover {
       color: var(--alert);
     }
