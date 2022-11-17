@@ -4,24 +4,28 @@ import { RiUserFollowFill } from "react-icons/ri";
 import { ImLocation2 } from "react-icons/im";
 import { RiUserFollowLine } from "react-icons/ri";
 
-
-type Perfil = {
+interface IPerfil{
   login: string;
   bio: string;
+  forks: number;
   blog: string;
-  followers: number;
-  following: number;
   location: string;
+  followers: string;
+  following: string;
 }
 
+
+
 export const Perfil = () => {
-  const [perfil, setPerfil] = useState<Perfil>();
+  const [perfil, setPerfil] = useState<IPerfil>();
 
   useEffect(() => {
     fetch("https://api.github.com/users/rianvitor26")
       .then((response) => response.json())
       .then((data) => setPerfil(data));
   }, []);
+
+  console.log(typeof perfil)
 
   return (
     <>
