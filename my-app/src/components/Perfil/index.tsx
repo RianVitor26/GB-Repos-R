@@ -10,10 +10,9 @@ interface IPerfil{
   forks: number;
   blog: string;
   location: string;
-  followers: string;
-  following: string;
+  followers: number;
+  following: number;
 }
-
 
 
 export const Perfil = () => {
@@ -25,7 +24,7 @@ export const Perfil = () => {
       .then((data) => setPerfil(data));
   }, []);
 
-  console.log(typeof perfil)
+  console.log(perfil)
 
   return (
     <>
